@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Jeu - Devine le nombre</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jeuxnum.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Devine le nombre</h1>
+        <p>Joueur : <span id="playerDisplay"></span></p>
+        
+        <button id="startGame">Lancer une partie</button>
+
+        <div id="gameZone" style="display: none; margin-top: 20px;">
+            <p>Entrez un nombre entre 0 et 999 :</p>
+            <input type="number" id="guessInput" min="0" max="999">
+            <button id="submitGuess">Deviner</button>
+            <p id="feedback"></p>
+        </div>
+        <h1>Top 100 Chronos</h1>
+        <table id="scoreboard">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Joueur</th>
+                    <th>Temps</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <br>
+        <button onclick="window.location.href='javascript.html'">Retour au menu</button>
+    </main>
+</body>
+</html>
