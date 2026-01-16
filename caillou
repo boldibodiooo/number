@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Admirez un caillou</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Reste le plus longtemps a regarder se caillou</h1>
+    </header>
+    <main>
+            <img src="caillou.jpg" alt="Caillou">
+        </div>
+        <button onclick="window.location.href='javascript.html'" style="margin-top: 20px;">Retour au menu</button>
+    </main>
+            </div>
+</body>
+</html>
