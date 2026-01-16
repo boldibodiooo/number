@@ -1,0 +1,279 @@
+/**
+ * Reset
+ */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/**
+ * Eléments génériques
+ */
+body {
+    --color-primary: #f76c5e;
+    --color-secondary: #f68e5f;
+    --color-tertiary: #ffeee6;    
+}
+/* Mise en forme des titres */
+h1 {
+    margin: 10px;
+    font-size: 60px;
+    font-weight: 900;
+    color: var(--color-primary);
+}
+h2 {
+    margin: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--color-secondary);
+}
+h3 {
+    margin: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--color-secondary);
+}
+/* Mise en forme des formulaires */
+input[type='radio'] {
+    filter: grayscale(1); /* Grayscale passe le bouton en niveau de gris */
+}
+input[type='text'],
+input[type='email'] {
+    width: 100%;
+    margin-right: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--color-primary);
+}
+input[type='text']::placeholder,
+input[type='email']::placeholder {
+    color: var(--color-secondary);
+    opacity: 50%;
+}
+button {
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--color-secondary);
+    background-color: white;
+}
+button:hover {
+    color: var(--color-primary);
+    background-color: var(--color-tertiary);
+    cursor: pointer;
+}
+button:focus {
+    background-color: var(--color-tertiary);
+    border: 3px solid var(--color-primary);
+    padding: 2px;
+}
+/**
+ * Eléments principaux
+ */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif; 
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    min-width: 200px;
+    margin-bottom: 50px;
+    padding: 50px;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 30px;
+    background-color: var(--color-secondary);
+}
+footer {
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
+    font-weight: 600;
+    font-size: 17px;
+    color: white;
+    background-color: var(--color-secondary);
+}
+.optionSource {
+    margin: 20px;
+}
+.optionSource input[type='radio']:not(:first-child) {
+    margin-left: 20px;
+}
+.zoneProposition {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(7, 167, 28, 0);
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+.zoneSaisie {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.zoneSaisie input[type='text'] {
+    width: 80%;
+}
+.zoneSaisie button {
+    width: 10%;
+}
+.zoneScore {
+    font-size: 20px;
+}
+@media screen and (max-width: 1200px) {
+    main {
+        width: 60%;
+        padding: 30px;
+    }
+}
+@media screen and (max-width: 800px) {
+    main {
+        width: 90%;
+        padding: 10px;
+    }
+}
+.image-container {
+    width: 100vw;          
+    height: 100vh;          
+    overflow: hidden;        
+    border-radius: 30px;   
+}
+.image-container img {
+    width: 100%;             /* prend toute la largeur du conteneur */
+    height: 100%;            /* prend toute la hauteur du conteneur */
+    object-fit: cover;       /* recadre l'image pour couvrir tout le conteneur sans déformation */
+    display: block;          /* enlève les petits espaces en dessous de l'image */
+}
+.image-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;      
+    overflow: hidden;
+    border-radius: 30px;
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.zoneChoix {
+    position: absolute;      
+    top: 50%;                  
+    left: 50%;                
+    transform: translate(-50%, -50%); 
+    display: flex;
+    gap: 20px;                 
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 15px 25px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.image-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    perspective: 1000px;
+}
+.image-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;       
+    overflow: hidden;
+}
+form input[type="submit"]:hover {
+    background-color: var(--color-secondary);
+}
+.image-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.zoneChoix {
+    position: absolute;
+    top: 20%;                  
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;    
+    align-items: center;        
+    gap: 20px;                  
+}
+.zoneChoix label {
+    background-color: rgba(235, 228, 134, 0.7);
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+.zoneChoix form input[type="submit"]:hover {
+    background-color: var(--color-secondary);
+}
+
+}
+.zoneChoix form input[type="text"],
+.zoneChoix form input[type="email"],
+.zoneChoix form textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    font-size: 15px;
+}
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 300px;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #222;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
